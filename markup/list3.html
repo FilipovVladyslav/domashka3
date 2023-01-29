@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            table-layout: fixed;
+            border-collapse: collapse;
+            border: 3px solid purple;
+            width: 400px;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+    </header>
+    <main>
+        <form>
+            <table>
+              <thead>
+                <tr>
+                    <th colspan="2">
+                        Поиск по характеристикам
+                    </th>
+                </tr>
+              </thead> 
+               <tbody>
+                <tr>
+                   <td>
+                    <label for="name">Тип кузова</label>
+                   </td>
+                   <td>
+                    <select id="name">
+                    <option value="">Седан</option>
+                    <option value="">Хэтчбек</option>
+                    <option value="">Купе</option>
+                    <option value="">Универсал</option>
+                   </select>
+                   </td>
+                </tr> 
+                <tr>
+                    <td>
+                     <label for="marka">Марка авто</label>
+                    </td>
+                    <td>
+                        <select id="marka">
+                            <option value="">Тайота</option>
+                            <option value="">Ниссан</option>
+                            <option value="">Мазда</option>
+                            <option value="">Митсубиши</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="strana">Страна производитель</label>
+                    </td>
+                    <td>
+                        <select id="strana">
+                            <option value="">Япония</option>
+                            <option value="">Германия</option>
+                            <option value="">Китай</option>
+                            <option value="">США</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="cena">Цена тыс$</label>
+                    </td>
+                    <td>
+                        <select id="cena">
+                            <option value="">от 1 до 5</option>
+                            <option value="">от 5 до 10</option>
+                            <option value="">от 10 до 20</option>
+                            <option value="">от 20 и более</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="age">Год</label>
+                    </td>
+                    <td>
+                     <input id="age" type="number" min="0" step="1" max="100">
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="sostoynie">Состояние</label>
+                    </td>
+                    <td>
+                        <select id="sostoynie">
+                            <option value="">Новое</option>
+                            <option value="">Б/У</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="tip">Тип топлива</label>
+                    </td>
+                    <td>
+                        <select id="tip">
+                            <option value="">Бензин</option>
+                            <option value="">Дизель</option>
+                            <option value="">Газ</option>
+                            <option value="">Электро</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="korobka">Тип коробки передач</label>
+                    </td>
+                    <td>
+                        <select id="korobka">
+                            <option value="">Автомат</option>
+                            <option value="">Ручная</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="cvet">Цвет</label>
+                    </td>
+                    <td>
+                        <select id="cvet">
+                            <option value="">Красный</option>
+                            <option value="">Синий</option>
+                            <option value="">Желтый</option>
+                            <option value="">Зеленый</option>
+                        </select>
+                    </td>
+                 </tr> 
+                 <tr>
+                    <td>
+                     <label for="funkcii">Доп. функции</label>
+                    </td>
+                    <td>
+                        <select id="funkcii">
+                            <option value="">Кожа</option>
+                            <option value="">Подогрев</option>
+                            <option value="">Фарком</option>
+                            <option value="">Парктроник</option>
+                        </select>
+                    </td>
+                 </tr> 
+               </tbody>
+            </table>
+            <p>
+                <button type="submit">Применить</button>
+                <button type="reset">Сбросить</button>
+            </p>
+        </form>
+    </main>
